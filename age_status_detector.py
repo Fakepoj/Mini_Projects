@@ -1,4 +1,4 @@
-age = input("Enter your age: ")
+age = int(input("Enter your age: "))
 if age <= 2:
     status = 'Baby'
 elif age <= 8:
@@ -9,5 +9,7 @@ elif age < 18:
     status = 'Teenager'
 else:
     status = 'Adult'
-if status[0] == 'A' or 'E' or 'I' or 'O' or 'U':
+if status[0] == 'A':
     print('You are an', status)
+else:
+    print('You are a', status)
